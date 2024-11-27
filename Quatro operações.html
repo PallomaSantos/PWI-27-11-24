@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas</title>
+
+    <!-- ADIÇÃO-->
+    <script type = "text/javascript">
+        function soma (){
+            {form_soma.resultadoSoma.value =  parseInt(form_soma.add1.value) + parseInt(form_soma.add2.value)}
+        }
+    </script> 
+    <script type = "text/javascript">
+        function Subtração (){
+            {form_sub.resultadoSub.value = parseInt (form_sub.sub1.value) - parseInt(form_sub.sub2.value)}
+
+        }
+    </script>
+    <script type = "text/javascript">
+        function multiplicação (){
+            {form_multi.resultadoMulti.value = parseInt(form_multi.multi1.value) * parseInt(form_multi.multi2.value)}
+
+        }
+    </script>
+    <script type = "text/javascript"o>
+        function divisão (){
+            {form_div.resultadoDiv.value = parseInt(form_div.div1.value) / parseInt (form_div.div2.value)}
+        }
+    </script>
+ </head>
+ <body>
+
+    <strong>Adição</strong>
+    <p> <mark style = "background-color: burlywood"> Fazer a função javascript: Soma.</mark></p>
+    <form name  = "form_soma">
+        Digite o primeiro número: <input name = "add1"  id = "add1" text = "add1" autofocus><br>
+        Digite o segundo número: <input name = "add2" id = "add2"> <br>
+        <input type = "button" onclick="soma()" value = "Somar"/><br>
+        O resultado da soma é: <output name = "resultadoSoma" id ="resultadoSoma"></output>
+    </form>
+    <br>
+    <strong>Subtração</strong>
+    <p> <mark style = "background-color: chartreuse;">Fazer a função javascript: Subtração.</mark></p>
+    <form name = "form_sub">
+        Digite o primeiro número:<input name = "sub1" id = "sub1" text = "sub1" autofocus><br>
+        Digite o segundo número: <input name = "sub2" id = "sub2"><br>
+        <input type = "button" onclick ="Subtração()" value = "Subtrair"/><br>
+        O resultado da subtração é: <output name = "resultadoSub" id ="resultadoSub"> </output>
+    </form>
+    <br>
+    <strong>Multiplicação</strong>
+    <p> <mark style= "background-color:yellowgreen ;"> Fazer a função javascript: Multiplicação. </mark></p>
+    <form name = "form_multi">
+        Digite o primeiro número: <input name = "multi1" id = "multi1" text = "multi1" autofocus><br>
+        Digite o segundo número: <input name = "multi2" id = "multi2"><br>
+        <input type = "button" onclick=" multiplicação ()" value = "Multiplicar"/><br>
+        O resultado da multiplicação é: <output name = "resultadoMulti" id = "resultadoMulti"> </output>
+    </form>
+    <br>
+    <strong>Divisão</strong>
+    <p><mark style="background-color:lightseagreen ;"> Fazer a função javascript: Divisão</mark></p>
+    <form name = "form_div">
+        Digite o primeiro número: <input name = "div1" id = "div1" text = "div1" autofocus><br>
+        Digite o segundo número: <input name = "div2" id = "div2"><br>
+        <input type = "button" onclick = "divisão ()" value = "Dividir"/><br>
+        O resultado da divisão é: <output name = "resultadoDiv" id = "resultadoDiv"> </output>
+    </form>
+
+ </body>
+ </html>
